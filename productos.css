@@ -1,0 +1,445 @@
+html {
+    background: linear-gradient(
+      30deg,
+      rgb(2, 255, 234) 0%,
+      rgb(0, 110, 255) 50%,
+      rgb(150, 3, 248) 100%
+    );
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  body {
+    display: flex;
+    margin: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  
+  section.shade {
+    z-index: 998;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+    margin-left: -2000px;
+    transition-property: background-color;
+  }
+  section.shade.active {
+    background-color: rgb(0, 0, 0, 0.5);
+    margin-left: 0;
+  }
+  
+  header {
+    box-shadow: 0px -16px 57px 30px rgba(0, 0, 0, 0.41);
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    width: 100%;
+    background: white;
+    box-sizing: border-box;
+    padding: 5px 15px;
+  
+    div {
+      width: 65px;
+    }
+  
+    img {
+      height: 100%;
+      width: 5%;
+      margin: auto;
+      display: block;
+    }
+    svg {
+      border-radius: 10px;
+      transition: 0.2s;
+    }
+  }
+  
+  nav {
+    position: fixed;
+    z-index: 999;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: -125px;
+    width: 100%;
+    height: 200px;
+    background: white;
+    transition: 0.5s;
+    padding: 0px 50px;
+    transition-delay: 0s;
+    transition-property: margin;
+  
+    #redes {
+      display: none;
+    }
+  
+    a {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      font-size: 150%;
+      font-weight: 700;
+      color: black;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 100%;
+      border-radius: 20px;
+      border: solid 5px;
+      border-color: transparent;
+      transition: 0.2s;
+    }
+    a:hover {
+      border-color: rgb(2, 255, 234);
+    }
+  }
+  
+  nav.active {
+    margin-top: 75px;
+  }
+  #Close {
+    display: none;
+    rotate: -90deg;
+    transition: 0.5s;
+  }
+  #Close.active {
+    display: block;
+    rotate: 0deg;
+  }
+  
+  #Menu {
+    display: block;
+    rotate: 0deg;
+    transition: 0.5s;
+  }
+  #Menu.active {
+    display: none;
+    rotate: 90deg;
+  }
+  
+  main {
+    font-family: Roboto;
+    box-sizing: border-box;
+    margin: 125px auto auto auto;
+    height: fit-content;
+    width: 85%;
+    background: rgba(128, 128, 128, 0.534);
+    display: grid;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    padding: 30px;
+  
+    #ecg {
+      border: solid 5px;
+      border-radius: 10px;
+      border-color: transparent;
+      transition: 0.2s;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-column: 1/4;
+      grid-row: 1/2;
+  
+      h1 {
+        font-size: 150%;
+      }
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
+      img:hover {
+        filter: brightness(80%);
+      }
+    }
+    #ecg:hover {
+      border-color: aqua;
+    }
+  
+    #audio {
+      border: solid 5px;
+      border-radius: 10px;
+      border-color: transparent;
+      transition: 0.2s;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-column: 1/4;
+      grid-row: 2/3;
+  
+      h1 {
+        font-size: 150%;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+  
+      audio {
+        height: 50px;
+        width: 200px;
+      }
+    }
+    #audio:hover {
+      border-color: aqua;
+    }
+  
+    #oxim {
+      border: solid 5px;
+      border-radius: 10px;
+      border-color: transparent;
+      transition: 0.2s;
+      padding: 5px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      grid-column: 1/4;
+      grid-row: 3/4;
+  
+      h1 {
+        font-size: 75%;
+      }
+      h2 {
+        font-size: 100%;
+      }
+      #percentage {
+        display: flex;
+      }
+    }
+    #oxim:hover {
+      border-color: aqua;
+    }
+    #oxim.danger {
+      background: rgb(192, 0, 0);
+      border-color: rgb(82, 0, 0);
+    }
+  }
+  
+  @media (min-width: 600px) {
+    main {
+      padding: 10px;
+      row-gap: 20px;
+  
+      #audio {
+        grid-column: 1/4;
+        font-size: 150%;
+  
+        audio {
+          height: 50px;
+          width: 350px;
+          margin-bottom: 0;
+        }
+      }
+  
+      #oxim {
+        margin: 0px 50px 25px 50px;
+        h1 {
+          font-size: 150%;
+        }
+        h2 {
+          font-size: 175%;
+        }
+      }
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    nav {
+      height: 100%;
+      width: 200px;
+      margin-top: 0;
+      margin-left: -200px;
+      justify-content: space-between;
+      padding: 0;
+      padding-top: 100px;
+  
+      #menu {
+        a {
+          height: 100px;
+          width: 100%;
+        }
+      }
+  
+      #redes {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        aspect-ratio: 1/1;
+        padding: 20px;
+        row-gap: 20px;
+        column-gap: 20px;
+        a {
+          height: 100%;
+          width: 100%;
+          border: 0;
+        }
+        a:hover {
+          background: aqua;
+        }
+      }
+    }
+    nav.active {
+      margin: 0;
+    }
+    main {
+      display: flex;
+    }
+  }
+  @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Estilos para la sección "Misión y Visión" */
+.productos {
+  width: 100%;
+  padding: 100px 0; /* Espaciado interno */
+  background-color: ( rgb(2, 255, 234) 0%,
+  rgb(0, 110, 255) 50%,
+  rgb(150, 3, 248) 100%,); /* Color de fondo */
+   text-align: center; /* Centrar texto */
+}
+
+.productos .container {
+    display: flex; 
+    justify-content:center; 
+    flex-wrap:wrap; 
+    gap: 10px; 
+}
+.A{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* Título en "Misión y Visión" */
+.productos h2 {
+  margin-bottom: 20px; /* Margen inferior */
+  font-size: 2em; /* Tamaño de fuente */
+  color: #000000; /* Color del texto */
+  animation: fadeInUp 1s ease; /* Animación */
+  border-bottom: 2px solid #000000; /* Línea inferior */
+  display: inline-block; /* Para ajustar el ancho de la línea */
+  padding-bottom: 10px; /* Espacio inferior */
+}
+
+/* Contenedor de misión y visión */
+.Medi {
+  flex: 1; /* Flexibilidad */
+  margin: 20px; /* Margen */
+  max-width: 45%; /* Ancho máximo */
+  background: #fff; /* Color de fondo */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  padding: 20px; /* Espaciado interno */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición */
+  text-align: center; /* Centrar texto */
+  display: flex; /* Uso de Flexbox */
+  flex-direction: column; /* Dirección de columna */
+  align-items: center; /* Centrar elementos */
+}
+
+/* Imagen en el contenedor de misión y visión */
+.Medi img {
+  width: 100%; /* Ancho completo */
+  border-radius: 10px 10px 0 0; /* Bordes redondeados arriba */
+}
+
+/* Párrafo en el contenedor de misión y visión */
+.Medi p {
+  font-size: 1.2em; /* Tamaño de fuente */
+  animation: fadeInUp 1s ease; /* Animación */
+  text-align: justify; /* Justificar texto */
+  color: #555; /* Color del texto */
+  line-height: 1.6; /* Altura de línea */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Efecto hover para misión y visión */
+.Medi:hover {
+  transform: scale(1.05); /* Escalado */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Animaciones */
+
+/* Animación de desvanecimiento y desplazamiento hacia arriba */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0; /* Opacidad inicial */
+      transform: translateY(20px); /* Desplazamiento inicial */
+  }
+  100% {
+      opacity: 1; /* Opacidad final */
+      transform: translateY(0); /* Desplazamiento final */
+  }
+}
+.imagen{
+    width: 50%;
+}
+
+
+
+.Medi2 {
+  flex: 1; /* Flexibilidad */
+  margin: 20px; /* Margen */
+  max-width: 45%; /* Ancho máximo */
+  background: #fff; /* Color de fondo */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  padding: 20px; /* Espaciado interno */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición */
+  text-align: center; /* Centrar texto */
+  display: flex; /* Uso de Flexbox */
+  flex-direction: column; /* Dirección de columna */
+  align-items: center; /* Centrar elementos */
+}
+
+/* Imagen en el contenedor de misión y visión */
+.Medi2 img {
+  width: 100%; /* Ancho completo */
+  border-radius: 10px 10px 0 0; /* Bordes redondeados arriba */
+}
+
+/* Párrafo en el contenedor de misión y visión */
+.Medi2 p {
+  font-size: 1.2em; /* Tamaño de fuente */
+  animation: fadeInUp 1s ease; /* Animación */
+  text-align: justify; /* Justificar texto */
+  color: #555; /* Color del texto */
+  line-height: 1.6; /* Altura de línea */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Efecto hover para misión y visión */
+.Medi2:hover {
+  transform: scale(1.05); /* Escalado */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
+}
