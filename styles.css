@@ -379,6 +379,11 @@ html {
     background: #8ec5f1;
     text-align: center;
     padding: 100px ;
+     img{
+         margin-top:50px;
+         width:600px;
+         border-radius:20px;
+     }
 }
 
 .nosotros .container {
@@ -406,7 +411,7 @@ html {
 }
 
 .nosotros-text p {
-    font-size: 1.2em;
+    font-size: 1.7em;
     animation: fadeInUp 1s ease;
 }
 
