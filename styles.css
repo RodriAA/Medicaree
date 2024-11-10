@@ -578,6 +578,7 @@ footer nav ul li a:hover {
 
     img {
         height:250px;
+        aspect-ratio:auto;
     }
 }
 
