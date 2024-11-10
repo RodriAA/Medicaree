@@ -575,6 +575,10 @@ footer nav ul li a:hover {
   rgb(0, 110, 255) 50%,
   rgb(150, 3, 248) 100%,); /* Color de fondo */
    text-align: center; /* Centrar texto */
+
+    img {
+        height:250px;
+    }
 }
 
 /* Contenedor dentro de "Misión y Visión" */
