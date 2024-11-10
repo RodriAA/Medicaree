@@ -66,9 +66,10 @@ html {
   
     img {
       height: 100%;
-      width: 5%;
+      width: 100%;
       display: block;
       margin: auto;
+        
      
     }
     svg {
@@ -367,6 +368,7 @@ html {
 
 .SI{
     padding-top: 60px;
+    width: 100%;
    
   
    
