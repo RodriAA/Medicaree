@@ -620,7 +620,6 @@ footer nav ul li a:hover {
 
 /* Imagen en el contenedor de misión y visión */
 .mision-vision-item img {
-  width: 100%; /* Ancho completo */
   border-radius: 10px 10px 0 0; /* Bordes redondeados arriba */
 }
 
