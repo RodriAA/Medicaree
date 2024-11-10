@@ -577,8 +577,8 @@ footer nav ul li a:hover {
    text-align: center; /* Centrar texto */
 
     img {
-        height:200px;
-        aspect-ratio:initial;
+        height:150px;
+        width: auto;
     }
 }
 
