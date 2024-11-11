@@ -57,7 +57,11 @@ html {
     background: white;
     box-sizing: border-box;
     padding: 5px 15px;
-  
+
+      div{
+          height:100%;
+          aspect-ratio:1/1;
+      }
     img {
       height: 100%;
       width: auto%;
