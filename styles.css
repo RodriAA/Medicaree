@@ -168,6 +168,8 @@ html {
       align-items: center;
       grid-column: 1/4;
       grid-row: 1/2;
+            opacity: 0; /* Inicia con la imagen oculta */
+  animation: fadeIn 1s ease-in-out forwards;
   
       h1 {
         font-size: 150%;
