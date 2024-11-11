@@ -58,10 +58,12 @@ html {
     }
   
     img {
-      height: 100%;
-      width: 100%;
-      margin: auto;
+       height: 100%;
+      width: auto%;
       display: block;
+      margin: auto;
+        opacity: 0; /* Inicia con la imagen oculta */
+  animation: fadeIn 1s ease-in-out forwards;
     }
     svg {
       border-radius: 10px;
