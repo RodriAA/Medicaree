@@ -62,8 +62,7 @@ html {
       width: auto%;
       display: block;
       margin: auto;
-        opacity: 0; /* Inicia con la imagen oculta */
-  animation: fadeIn 1s ease-in-out forwards;
+       
     }
     svg {
       border-radius: 10px;
