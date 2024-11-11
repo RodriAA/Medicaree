@@ -13,11 +13,6 @@ html {
     overflow-x: hidden;
 
   }
-  .Baikon{
-  width:100%;
-  opacity: 0; /* Inicia con la imagen oculta */
-  animation: fadeIn 1s ease-in-out forwards; /* Animación de fade in */
-  }
 
   body {
     transition: margin-left 0.3s;
@@ -62,10 +57,6 @@ html {
     background: white;
     box-sizing: border-box;
     padding: 5px 15px;
-   
-    div {
-      width: 65px;
-    }
   
     img {
       height: 100%;
