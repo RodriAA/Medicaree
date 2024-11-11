@@ -16,7 +16,7 @@ html {
     width: 400px;
   }
   .Baikon{
-   
+  width:100%
   opacity: 0; /* Inicia con la imagen oculta */
   animation: fadeIn 1s ease-in-out forwards; /* Animación de fade in */
   }
