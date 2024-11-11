@@ -63,8 +63,7 @@ html {
       width: auto%;
       display: block;
       margin: auto;
-        opacity: 0; /* Inicia con la imagen oculta */
-  animation: fadeIn 1s ease-in-out forwards;
+   
         
      
     }
@@ -228,7 +227,7 @@ html {
         height:150px;
         width:auto;
             opacity: 0; /* Inicia con la imagen oculta */
-  animation: fadeIn 1s ease-in-out forwards; /* Animación de fade in *
+  animation: fadeIn 1s ease-in-out forwards; /* Animación de fade in */
       }
   
       h1 {
