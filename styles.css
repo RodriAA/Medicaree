@@ -15,6 +15,11 @@ html {
   img {
     width: 400px;
   }
+  .Baikon{
+   
+  opacity: 0; /* Inicia con la imagen oculta */
+  animation: fadeIn 1s ease-in-out forwards; /* Animación de fade in */
+  }
 
   body {
     transition: margin-left 0.3s;
@@ -65,9 +70,8 @@ html {
     }
   
     img {
-      width: 100%;
-  
-  height: auto
+      height: 100%;
+      width: 10%;
       display: block;
       margin: auto;
      
@@ -573,7 +577,18 @@ html {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-
+.mapa {
+  width: 100%;
+  height: 450px;
+  margin-top: 20px;
+}
+.lugar
+{
+ font-size: 24px; /* Aumenta el tamaño de la letra */
+ font-weight: bold; /* Si también quieres que el texto sea más destacado */
+ color: #fff; /* Puedes cambiar el color del texto si lo deseas */
+ text-align: center;
+}
 
 footer {
     background-color: #003366;
