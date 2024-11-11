@@ -12,9 +12,9 @@ html {
     width: 100vw;
     overflow-x: hidden;
   }
-  
-
-
+  img {
+    width: 400px;
+  }
 
   body {
     transition: margin-left 0.3s;
@@ -33,8 +33,7 @@ html {
     padding: 0 20px;
    
   }
-
-
+  
   section {
     z-index: 998;
     position: fixed;
@@ -67,10 +66,9 @@ html {
   
     img {
       height: 100%;
-      width: 100%;
+      width: 10%;
       display: block;
       margin: auto;
-        
      
     }
     svg {
@@ -99,6 +97,8 @@ html {
     #redes {
       display: none;
     }
+    
+  
   
     a {
       box-sizing: border-box;
@@ -369,22 +369,70 @@ html {
 
 .SI{
     padding-top: 60px;
-    width: 100%;
    
   
    
 }
+/* Estilo para el texto debajo de BAIKON SAS */
+.Texto
+ {
+  font-size: 24px; /* Aumenta el tamaño de la letra */
+  font-weight: bold; /* Si también quieres que el texto sea más destacado */
+  color: #333; /* Puedes cambiar el color del texto si lo deseas */
+}
+
+/* Definición de la animación */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Aplicar la animación a la clase de imagen */
+.Imagen3 {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  margin: 20px auto;
+  opacity: 0; /* Inicia con la imagen oculta */
+  animation: fadeIn 1s ease-in-out forwards; /* Animación de fade in */
+  
+}
+.Imagen9 {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  margin: 20px auto;
+  opacity: 0; /* Inicia con la imagen oculta */
+  animation: fadeIn 1s ease-in-out forwards; /* Animación de fade in */
+  
+}
+.Imagen8 {
+  width: 100%;
+  max-width: 185px;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  margin: 20px auto;
+  opacity: 0; /* Inicia con la imagen oculta */
+  animation: fadeIn 1s ease-in-out forwards; /* Animación de fade in */
+  
+}
+
+
  .nosotros {
   
     padding-top: 0px; /* Agregar un espacio superior igual a la altura del header */
     background: #8ec5f1;
     text-align: center;
     padding: 100px ;
-     img{
-         margin-top:50px;
-         width:600px;
-         border-radius:20px;
-     }
 }
 
 .nosotros .container {
@@ -412,7 +460,7 @@ html {
 }
 
 .nosotros-text p {
-    font-size: 1.7em;
+    font-size: 1.2em;
     animation: fadeInUp 1s ease;
 }
 
@@ -581,11 +629,6 @@ footer nav ul li a:hover {
   rgb(0, 110, 255) 50%,
   rgb(150, 3, 248) 100%,); /* Color de fondo */
    text-align: center; /* Centrar texto */
-
-    img {
-        height:150px;
-        width: auto;
-    }
 }
 
 /* Contenedor dentro de "Misión y Visión" */
@@ -626,6 +669,7 @@ footer nav ul li a:hover {
 
 /* Imagen en el contenedor de misión y visión */
 .mision-vision-item img {
+  width: 100%; /* Ancho completo */
   border-radius: 10px 10px 0 0; /* Bordes redondeados arriba */
 }
 
